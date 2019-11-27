@@ -1,0 +1,19 @@
+{
+	"name": "Luce-bot",
+	"version": "1.0.0",
+	"description": "Discord customized bot",
+	"main": "bot.js",
+	"author": "Luce",
+	"dependencies": {
+		"canvas": "^2.5.0",
+		"counter": "^0.1.1",
+		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+		"discord.js": "^11.5.1",
+		"discord.js-commando": "^0.10.0",
+		"ffmpeg-binaries": "^4.0.0",
+		"sequelize": "^5.12.3",
+		"sqlite3": "^4.0.9",
+		"winston": "^3.2.1",
+		"ytdl-core": "^0.29.5"
+	}
+}
