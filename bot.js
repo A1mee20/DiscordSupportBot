@@ -37,15 +37,25 @@ client.on('message', async message => {
       return message.channel.send('For now, I do not know what my full capabilities are, but know that I love you. ❤️');
     }
     else if (command === 'love') {
-        const myPhrases = ["You are adorable!","We have your back!","You are strong, you got this!","We believe in you!","You are adorable, never leave!","Be sure to breath, you are doing an amazing job.","Sending all the hugs your way....... SENT!"];
+        const myPhrases = ["You are adorable!","We have your back!","You are strong, you got this!","We believe in you!","You are adorable, never leave!","Be sure to breath, you are doing an amazing job.","Sending all the hugs your way....... SENT!","You deserve to be happy!"];
         const phrase = myPhrases[Math.floor(Math.random() * myPhrases.length)];
         const targetLove = message.mentions.users.first();
         const messageEmbed = new Discord.RichEmbed()
         .setColor('#9900ff')
         .setAuthor(`${targetLove.username} you are amazing. We love you a lot!`,'https://cdn.discordapp.com/emojis/600510685767794696.png?v=1')
         .setDescription(`${phrase}`);
-
         return message.channel.send(messageEmbed);
+   // }
+   // else if (command === 'muah') {
+	   // return message.channel.send('Muah!');
+   // }
+	// else if (command === 'quote') {
+		// const myPhrases = ["What we achieve inwardly will change outer reality. ~Plutarch","Your present circumstances don't determine where you can go they merely determine where you start. ~Nido Qubein","It is only in sorrow bad weather masters us; in joy we face the storm and defy it"];
+		// const phrase = myPhrase[Math.floor(Math.random() * myPhrases.length)];
+		// const targetLove = message.mentions.users.first();
+		// const messageEmbed = new Discord.RichEmbed()
+		// return message.channel.send(messageEmbed);
+	    
 
     }
 });
